@@ -1,0 +1,57 @@
+name: ChatProtect
+main: speeddev.info.ChatProtect.ChatProtect
+description: ChatProtect Plugin
+author: SpeedDev
+version: 1.0
+
+commands:
+    clearchat:
+        aliases: [cc]
+        usage: /<command>
+        description: Globally Clear Chat
+    chatprotect:
+        aliases: [cp]
+        usage: /<command>
+        description: ChatProtect Command
+    broadcast:
+        aliases: [bc]
+        usage: /<command>
+        description: Broadcast a message to the entire server
+    chatlock:
+        aliases: [cl]
+        usage: /<command>
+        description: Lock/Unlock Chat
+    staffchat:
+        aliases: [sc]
+        usage: /<command>
+        description: A Chat Channel
+    commandspy:
+        aliases: [cmdspy]
+        usage: /<command>
+        description: A command to spy on user's commands 
+        
+permissions:
+    chatprotect.*:
+       description: Access to all permissions
+       children:
+           chatprotect.chatlock: true
+           chatprotect.clearchat: true
+           chatprotect.clearchatplayer: true
+           chatprotect.broadcast: true
+           chatprotect.staffchat: true
+           chatprotect.cmdspy: true
+           chatprotect.allowswear: true
+    chatprotect.chatlock:
+       description: Lock/Unlock Chat
+    chatprotect.clearchat:
+       description: Clear Chat
+    chatprotect.clearchatplayer:
+       description: Clear A Specific User's Chat
+    chatprotect.broadcast:
+       description: /Broadcast or /BC
+    chatprotect.staffchat:
+       description: A chatprotect Command
+    chatprotect.cmdspy:
+       description: A /CmdSpy Command
+    chatprotect.allowswear:
+       description: Bypass the swearing filter

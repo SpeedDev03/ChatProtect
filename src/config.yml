@@ -1,0 +1,40 @@
+# The prefix for all messages from ChatProtect. 
+Prefix: '&9[ChatProtect]&a&o'
+
+# The access denied message (Does use the Prefix).
+No Access Message: '&c&oYou do not have access!'
+
+# This is the message when someone tries to chat during a Chat Lock (Does use the Prefix).
+Chat Locked Message: '&c&oSorry, %displayname%, but the chat is currently locked!'
+
+# This is the message broadcasted when chat becomes locked (Does use the Prefix).
+Chat Lock Enable Message: '&3&o%sender%&b&o has locked chat!'
+
+# This is the message broadcasted when chat becomes unlocked (Does use the Prefix).
+Chat Lock Disable Message: '&3&o%sender%&b&o has unlocked chat!'
+
+# The message broadcasted after chat is cleared (Does use the Prefix).
+Clear Chat Message: '&3&o%displayname%&b&o has cleared the chat!'
+
+# The format for /broadcast and /bc (Does not use the Prefix).
+Broadcast Format: '&9[Broadcast] &a%msg%'
+
+# The format for /staffchat and /sc (Does not use the Prefix).
+Staff Chat Format: '&9[StaffChat] &6%displayname%: &a%msg%'
+
+# The format for /CmdSpy (Does not use the Prefix).
+Command Spy Format: '&9[CommandSpy] &6%displayname%: &a%msg%'
+
+# If set to true, the AntiSwear filter will be enabled. If set to false, it will not be enabled.
+Anti Swear Filter: true
+
+# If set to true - users will recieve a msg saying they can't swear.
+# If set to false - the message will just be cancelled. 
+Anti Swear Msg Send: true
+# Anti Swear Message (Does use the Prefix).
+Anti Swear Message: '&c&oSwearing is not permitted!'
+
+# Words to block | Please do not use more than one word per line.
+
+Swears:
+  - Dick
